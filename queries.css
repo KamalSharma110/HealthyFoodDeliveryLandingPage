@@ -257,17 +257,19 @@
         box-shadow: none;
     }
 
-    /* .quotes{
+     .quotes{
         display:none;
     }
-
+    /*
     figure{
         display:flex;
     }
-
-    .profile-pic{
+    */
+    .review-card div{
+        display: block;
+        width: fit-content;
         margin: auto;
-    } */
+    } 
 
     .cta-grid {
         display: flex;

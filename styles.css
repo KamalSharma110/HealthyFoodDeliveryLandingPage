@@ -9,6 +9,9 @@ html {
 
 body {
     font-family: Rubik, sans-serif;
+}
+
+body, html{
     overflow-x: hidden;
 }
 
@@ -495,7 +498,8 @@ header {
 }
 
 .review-button-container {
-    align-self: end;
+    position: absolute;
+    bottom: -2%;
 }
 
 .review-btn {
