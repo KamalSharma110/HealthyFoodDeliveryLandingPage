@@ -1,467 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TX0GRN65WV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      gtag("config", "G-TX0GRN65WV");
+    </script>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veggie Patrol</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Righteous:wght@500;700;900&display=swap" rel="stylesheet"> -->
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="queries.css">
-</head>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+  </head>
 
-<body>
+  <body>
     <!-- <button id="temp">button</button> -->
     <header class="">
-        <nav id="navbar">
-            <div id="logo-container">
-                <!-- <h1 id="logo">G<span>oo</span>d <br> &nbsp; &nbsp; F<span>oo</span>d</h1> -->
-                <img src="img/logo.png" alt="logo" data-href="#home">
-                <button class="nav-toggle">
-                    <ion-icon name="menu"></ion-icon>
-                </button>
-            </div>
-            <ul>
-                <li> <a href="#how-it-works" class="navLinks">How It Works</a> </li>
-                <li> <a href="#meals" class="navLinks">Meals</a> </li>
-                <li> <a href="#testimonials" class="navLinks">Testimonials</a> </li>
-                <li> <a href="#pricing" class="navLinks">Pricing</a> </li>
-                <li class="btn" data-href="#cta"> <a>Give it a try!</a> </li>
-            </ul>
-        </nav>
+      <nav id="navbar">
+        <div id="logo-container">
+          <!-- <h1 id="logo">G<span>oo</span>d <br> &nbsp; &nbsp; F<span>oo</span>d</h1> -->
+          <img src="img/logo.png" alt="logo" data-href="#home" />
+          <button class="nav-toggle">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </div>
+        <ul>
+          <li><a href="#how-it-works" class="navLinks">How It Works</a></li>
+          <li><a href="#meals" class="navLinks">Meals</a></li>
+          <li><a href="#testimonials" class="navLinks">Testimonials</a></li>
+          <li><a href="#pricing" class="navLinks">Pricing</a></li>
+          <li class="btn" data-href="#cta"><a>Give it a try!</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <section id="home">
+        <div id="home-main-image-container">
+          <img src="img/home_bg.png" alt="" class="home-main-image" />
+        </div>
 
-        <section id="home">
-            <div id="home-main-image-container">
-                <img src="img/home_bg.png" alt="" class="home-main-image">
-            </div>
+        <div class="primary-container">
+          <h1 class="primary-heading">
+            A nutritious meal delivered to your door, each and every day
+            <span
+              class="typewrite wrap"
+              data-type="A nutritituous meal delivered to your door, each and every day"
+            ></span>
+          </h1>
 
-            <div class="primary-container">
-                <h1 class="primary-heading">A nutritious meal delivered to your door, each and every day
-                    <span class="typewrite wrap" data-type="A nutritituous meal delivered to your door, each and every day" ></span>
-                </h1>
-                
-                <p class="primary-description">The smart 365 days/year food membership that will make you eat healthy
-                    again. Adapted to your dietary requirements and personal preferences.</p>
+          <p class="primary-description">
+            The smart 365 days/year food membership that will make you eat
+            healthy again. Adapted to your dietary requirements and personal
+            preferences.
+          </p>
 
-                <div class="button-container">
-                    <button class="btn" data-href="#cta">Start Eating Well</button>
-                    <button class="btn" data-href="#how-it-works">Learn More</button>
-                </div>
+          <div class="button-container">
+            <button class="btn" data-href="#cta">Start Eating Well</button>
+            <button class="btn" data-href="#how-it-works">Learn More</button>
+          </div>
 
-                <!-- <div class="counter-container">
+          <!-- <div class="counter-container">
                     <span>200k+</span>
                     <p>meals delivered last year</p>
                     <span></span>
                 </div> -->
-            </div>
-
-        </section>
-
-        
-        <section id="how-it-works">
-            <h1 class="primary-heading">How It Works</h1>
-
-            <div class="info-container">
-                <div class="info-card">
-                    <span class="info-number-circle">01</span>
-                    <h3>Tell us what you like</h3>
-                    <p>Never again waste time thinking about what to eat! Veggie Patrol AI will create a 100%
-                        personalized weekly
-                        meal plan just for you. It makes sure you get all the nutrients and vitamins you need.</p>
-                </div>
-                <div class="info-card">
-                    <span class="info-number-circle">02</span>
-                    <h3>Approve your weekly meal plan</h3>
-                    <p>Once per week, approve the meal plan generated for you by Veggie Patrol AI. You can change
-                        ingredients,
-                        swap entire meals, or even add your own recipes.</p>
-                </div>
-                <div class="info-card">
-                    <span class="info-number-circle">03</span>
-                    <h3>Receive meals at convenient time</h3>
-                    <p>Best chefs in town will cook your selected meal every day, and we will deliver it to your door
-                        whenever works best for you. You can change delivery schedule and address daily!</p>
-                </div>
-            </div>
-        </section>
-
-
-        
-        <section id="meals">
-            <h1 class="primary-heading">Meals</h1>
-
-            <ul class="tab-list">
-                <li class="active"><a href="#tab-1" class="tab-control">Bruschetta</a></li>
-                <li><a href="#tab-2" class="tab-control">Avocado Salad</a></li>
-                <li><a href="#tab-3" class="tab-control">Zoodles Primavera</a></li>
-                <li><a href="#tab-4" class="tab-control">Japanese Gyozas</a></li>
-                <li><a href="#tab-5" class="tab-control">Creamy Quinoa Casserole</a></li>
-            </ul>
-
-            <div class="meal-container active" id="tab-1">
-                <div>
-                    <img class="img-out-window meal-attributes" src="img/menu/meal_1.png" alt="">
-                </div>
-                
-                <div class="meal-info-container">
-                    <h3 class="h3-out-window">
-                        <ion-icon name="leaf-outline"></ion-icon> Nutri Score: 45
-                    </h3>
-                    <h3 class="h3-out-window">
-                        <ion-icon name="flame-outline"></ion-icon> Calories: 600
-                    </h3>
-                    <h3 class="h3-out-window">
-                        <ion-icon name="star-half-outline"></ion-icon> 3.8 rating (250)
-                    </h3>
-                </div>
-            </div>
-            <div class="meal-container" id="tab-2">
-                <div>
-                    <img class="img-out-window meal-attributes" src="img/menu/meal_2.png" alt="">
-                </div>
-                
-                <div class="meal-info-container">
-                    <h3 class="h3-out-window">
-                        <ion-icon name="leaf-outline"></ion-icon>Nutri Score: 63
-                    </h3>
-                    <h3 class="h3-out-window">
-                        <ion-icon name="flame-outline"></ion-icon>Calories: 650
-                    </h3>
-                    <h3 class="h3-out-window">
-                        <ion-icon name="star-half-outline"></ion-icon>3.9 rating (199)
-                    </h3>
-                </div>
-            </div>
-            <div class="meal-container" id="tab-3">
-                <div>
-                    <img class="img-out-window meal-attributes" src="img/menu/meal_3.png" alt="">
-                </div>
-                
-                <div class="meal-info-container">
-                    <h3 class="h3-out-window">
-                        <ion-icon name="leaf-outline"></ion-icon>Nutri Score: 53
-                    </h3>
-                    <h3 class="h3-out-window">
-                        <ion-icon name="flame-outline"></ion-icon>Calories: 570
-                    </h3>
-                    <h3 class="h3-out-window">
-                        <ion-icon name="star-half-outline"></ion-icon>4.5 rating (137)
-                    </h3>
-                </div>
-            </div>
-            <div class="meal-container" id="tab-4">
-                <div>
-                    <img class="img-out-window meal-attributes" src="img/menu/meal_4.png" alt="">
-                </div>
-                
-                <div class="meal-info-container">
-                    <h3 class="h3-out-window">
-                        <ion-icon name="leaf-outline"></ion-icon>Nutri Score: 81
-                    </h3>
-                    <h3 class="h3-out-window">
-                        <ion-icon name="flame-outline"></ion-icon>Calories: 430
-                    </h3>
-                    <h3 class="h3-out-window">
-                        <ion-icon name="star-half-outline"></ion-icon>4.9 rating (537)
-                    </h3>
-                </div>
-            </div>
-            <div class="meal-container" id="tab-5">
-                <div>
-                    <img class="img-out-window meal-attributes" src="img/menu/meal_5.png" alt="">
-                </div>
-                
-                <div class="meal-info-container">
-                    <h3 class="h3-out-window">
-                        <ion-icon name="leaf-outline"></ion-icon>Nutri Score: 79
-                    </h3>
-                    <h3 class="h3-out-window">
-                        <ion-icon name="flame-outline"></ion-icon>Calories: 333
-                    </h3>
-                    <h3 class="h3-out-window">
-                        <ion-icon name="star-half-outline"></ion-icon>4.2 rating (53)
-                    </h3>
-                </div>
-            </div>
-
-        </section>
-        
-         <section id="testimonials">
-            <h1 class="primary-heading">Testimonials</h1>
-
-            <div class="review-bg-container">
-                <div class="review-card-container">
-                    <div class="review-card">
-                        <figure>
-                            <div><img class="quotes" src="img/quotes.png" alt=""></div>
-                            <div><img class="profile-pic" src="img/customers/dave.jpg" alt="dave"></div>
-                        </figure>
-                        <blockquote>
-                            From the first week we started receiving from Veggie Patrol, I knew this was a perfect fit.
-                            They
-                            really
-                            understand how to care for everyone in my family, our individual needs and preferences.
-                            Every
-                            meal
-                            is tailored to both adults and kids.
-                        </blockquote>
-                        <p>Dave Bryson</p>
-                    </div>
-
-                    <div class="review-card ">
-                        <figure>
-                            <div><img class="quotes" src="img/quotes.png" alt=""></div>
-                            <div><img class="profile-pic" src="img/customers/ben.jpg" alt="Ben"></div>
-                        </figure>
-                        <blockquote>
-                            I ordered meals for my son and daughter in law to help them out during the COVID crisis.
-                            They
-                            enjoyed them very much and there was enough food for an extra day. My son said the food was
-                            healthy,
-                            cooked well and delicious. Well done!
-                        </blockquote>
-                        <p>Ben Hadley</p>
-                    </div>
-                    <div class="review-card ">
-                        <figure>
-                            <div><img class="quotes" src="img/quotes.png" alt=""></div>
-                            <div><img class="profile-pic" src="img/customers/hannah.jpg" alt="Hannah"></div>
-                        </figure>
-                        <blockquote>
-
-                            "Veggie Patrol is a great healthy meal service for those who are challenged to find either
-                            the
-                            time or
-                            energy to shop & cook. We have found it indispensable to sustain long work shifts when other
-                            healthy
-                            & fast restaurant options are in short supply."
-                        </blockquote>
-                        <p>Hannah Smith</p>
-                    </div>
-                    <div class="review-card">
-                        <figure>
-                            <div><img class="quotes" src="img/quotes.png" alt=""></div>
-                            <div><img class="profile-pic" src="img/customers/steve.jpg" alt="steve"></div>
-                        </figure>
-                        <blockquote>
-                            I’m a business owner who lives a very hectic life, but I’m invested in my health and work
-                            out 6
-                            times a week. This service ensures I don’t miss meals and puts extremely healthy food into
-                            my
-                            system.
-                        </blockquote>
-                        <p>Steve Miller</p>
-                    </div>
-                    <div class="review-card">
-                        <figure>
-                            <div><img class="quotes" src="img/quotes.png" alt=""></div>
-                            <div><img class="profile-pic" src="img/customers/customer-3.jpg" alt="Karen"></div>
-                        </figure>
-                        <blockquote>
-                            I got Veggie Patrol for the whole family, and it frees up so much time! Plus, everything is
-                            organic and
-                            vegan and without plastic.The AI algorithm is crazy good, it chooses the right meals for me
-                            every
-                            time.
-                        </blockquote>
-                        <p>Karen Lockwood</p>
-                    </div>
-
-                </div>
-                <div class="review-button-container">
-                    <button class="review-btn">
-                        <ion-icon name="remove-outline"></ion-icon>
-                    </button>
-                    <button class="review-btn">
-                        <ion-icon name="remove-outline"></ion-icon>
-                    </button>
-                    <button class="review-btn">
-                        <ion-icon name="remove-outline"></ion-icon>
-                    </button>
-                    <button class="review-btn">
-                        <ion-icon name="remove-outline"></ion-icon>
-                    </button>
-                    <button class="review-btn">
-                        <ion-icon name="remove-outline"></ion-icon>
-                    </button>
-    
-                </div>
-            </div>
-
-        </section>
-        
-        <section id="pricing">
-            <h1 class="primary-heading">Pricing</h1>
-
-            <div class="grid-container">
-                <div class="price-container" id="col-one">
-                    <div>
-                        <div class="plan-desc">
-                            <p class="plan-name">basic</p>
-                            <p class="plan-price">$399</p>
-                            <p class="plan-duration">per month</p>
-                        </div>
-                            <button class="plan-buy" data-href="#home">Buy Plan <span></span></button>
-                    </div>
-                </div>
-                <div class="price-container premium-price" id="col-two">
-                    <div>
-                        <div class="plan-desc">
-                            <p class="plan-name">premium</p>
-                            <p class="plan-price">$599</p>
-                            <p class="plan-duration">per month</p>
-                        </div>
-                            <button class="plan-buy" data-href="#home">Buy Plan <span></span></button>
-                    </div>
-                </div>
-                <div class="price-container" id="col-three">
-                    <div>
-                        <div class="plan-desc">
-                            <p class="plan-name">standard</p>
-                            <p class="plan-price">$499</p>
-                            <p class="plan-duration">per month</p>
-                        </div>
-                            <button class="plan-buy" data-href="#home">Buy Plan <span></span></button>
-                    </div>
-                </div>
-
-                <div class="row row-one">
-                    <span class="pricing-features">Order 24/7</span>
-                    <ion-icon name="close-outline"></ion-icon>
-                    <ion-icon name="checkmark-outline" style="color: white;"></ion-icon>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-                <div class="row row-two">
-                    <span class="pricing-features">free delivery</span>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <ion-icon name="checkmark-outline" style="color: white;"></ion-icon>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-                <div class="row row-three">
-                    <span class="pricing-features">No. of meals per day</span>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <ion-icon name="checkmark-outline" style="color: white;"></ion-icon>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-                <div class="row row-four">
-                    <span class="pricing-features">Recipe Customization</span>
-                    <ion-icon name="close-outline"></ion-icon>
-                    <ion-icon name="checkmark-outline" style="color: white;"></ion-icon>
-                    <ion-icon name="close-outline"></ion-icon>
-                </div>
-                <div class="row row-five">
-                    <span class="pricing-features">Protien Customization</span>
-                    <ion-icon name="close-outline"></ion-icon>
-                    <ion-icon name="checkmark-outline" style="color: white;"></ion-icon>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-                <div class="row row-six">
-                    <span class="pricing-features">Access to latest recipes</span>
-                    <ion-icon name="close-outline"></ion-icon>
-                    <ion-icon name="checkmark-outline" style="color: white;"></ion-icon>
-                    <ion-icon name="close-outline"></ion-icon>
-                </div>
-            </div>
-
-        </section>
-        
-        <section id="cta">
-            <div class="cta-grid">
-                <div>
-                    <h2>Get your first meal for free!</h2>
-                    <p>Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel
-                        or pause anytime. And the first meal is on us!</p>
-                    <form action="noaction.php" name="ctaForm">
-                        <div>
-                            <label for="name">Full Name</label>
-                            <input type="text" name="name" id="name" placeholder="Kamal Sharma" required>
-                        </div>
-                        <div>
-                            <label for="email">Email Address</label>
-                            <input type="email" name="email" id="email" placeholder="me@example.com" required>
-                        </div>
-                        <div>
-                            <label for="drop-down">Where did you hear about us?</label>
-                            <select name="drop-down" id="drop-down" required>
-                                <option value="">Please Choose an Option:</option>
-                                <option value="">Friends and Family</option>
-                                <option value="">YouTube Video</option>
-                                <option value="">Facebook Ad</option>
-                                <option value="">Podcast</option>
-                                <option value="">Others</option>
-                            </select>
-                        </div>
-                        <input type="submit" value="Sign Up Now">
-                    </form>
-                </div>
-                <div></div>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="footer-grid">
-            <div class="logo-col">
-                <img src="img/logo.png" alt="">
-                <ion-icon name="logo-facebook" data-href="#home"></ion-icon>
-                <ion-icon name="logo-instagram" data-href="#home"></ion-icon>
-                <ion-icon name="logo-youtube" data-href="#home"></ion-icon>
-                <ion-icon name="logo-twitter" data-href="#home"></ion-icon>
-                <p>Copyright &copy; 2022 by Veggie Patrol, Inc. All rights reserved.</p>
-            </div>
-
-            <div class="address-col">
-                <p>Contact Us</p>
-                <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107
-                    <br><br>
-                    435-201-6670
-                    hello@veggiepatrol.com
-                </p>
-            </div>
-
-            <div class="footer-col">
-                <p>Account</p>
-                <ul>
-                    <li>Create account</li>
-                    <li>Sign an</li>
-                    <li>iOS app</li>
-                    <li>Android app</li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <p>Company</p>
-                <ul>
-                    <li>About Veggie Patrol</li>
-                    <li>For Business</li>
-                    <li>Cooking partners</li>
-                    <li>Careers</li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <p>Resources</p>
-                <ul>
-                    <li>Recipe directory</li>
-                    <li>Help center</li>
-                    <li>Privacy & terms</li>
-                </ul>
-            </div>
         </div>
+      </section>
+
+      <section id="how-it-works">
+        <h1 class="primary-heading">How It Works</h1>
+
+        <div class="info-container">
+          <div class="info-card">
+            <span class="info-number-circle">01</span>
+            <h3>Tell us what you like</h3>
+            <p>
+              Never again waste time thinking about what to eat! Veggie Patrol
+              AI will create a 100% personalized weekly meal plan just for you.
+              It makes sure you get all the nutrients and vitamins you need.
+            </p>
+          </div>
+          <div class="info-card">
+            <span class="info-number-circle">02</span>
+            <h3>Approve your weekly meal plan</h3>
+            <p>
+              Once per week, approve the meal plan generated for you by Veggie
+              Patrol AI. You can change ingredients, swap entire meals, or even
+              add your own recipes.
+            </p>
+          </div>
+          <div class="info-card">
+            <span class="info-number-circle">03</span>
+            <h3>Receive meals at convenient time</h3>
+            <p>
+              Best chefs in town will cook your selected meal every day, and we
+              will deliver it to your door whenever works best for you. You can
+              change delivery schedule and address daily!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="meals">
+        <h1 class="primary-heading">Meals</h1>
+
+        <ul class="tab-list">
+          <li class="active">
+            <a href="#tab-1" class="tab-control">Bruschetta</a>
+          </li>
+          <li><a href="#tab-2" class="tab-control">Avocado Salad</a></li>
+          <li><a href="#tab-3" class="tab-control">Zoodles Primavera</a></li>
+          <li><a href="#tab-4" class="tab-control">Japanese Gyozas</a></li>
+          <li>
+            <a href="#tab-5" class="tab-control">Creamy Quinoa Casserole</a>
+          </li>
+        </ul>
+
+        <div class="meal-container active" id="tab-1">
+          <div>
+            <img
+              class="img-out-window meal-attributes"
+              src="img/menu/meal_1.png"
+              alt=""
+            />
+          </div>
+
+          <div class="meal-info-container">
+            <h3 class="h3-out-window">
+              <ion-icon name="leaf-outline"></ion-icon> Nutri Score: 45
+            </h3>
+            <h3 class="h3-out-window">
+              <ion-icon name="flame-outline"></ion-icon> Calories: 600
+            </h3>
+            <h3 class="h3-out-window">
+              <ion-icon name="star-half-outline"></ion-icon> 3.8 rating (250)
+            </h3>
+          </div>
+        </div>
+        <div class="meal-container" id="tab-2">
+          <div>
+            <img
+              class="img-out-window meal-attributes"
+              src="img/menu/meal_2.png"
+              alt=""
+            />
+          </div>
+
+          <div class="meal-info-container">
+            <h3 class="h3-out-window">
+              <ion-icon name="leaf-outline"></ion-icon>Nutri Score: 63
+            </h3>
+            <h3 class="h3-out-window">
+              <ion-icon name="flame-outline"></ion-icon>Calories: 650
+            </h3>
+            <h3 class="h3-out-window">
+              <ion-icon name="star-half-outline"></ion-icon>3.9 rating (199)
+            </h3>
+          </div>
+        </div>
+        <div class="meal-container" id="tab-3">
+          <div>
+            <img
+              class="img-out-window meal-attributes"
+              src="img/menu/meal_3.png"
+              alt=""
+            />
+          </div>
+
+          <div class="meal-info-container">
+            <h3 class="h3-out-window">
+              <ion-icon name="leaf-outline"></ion-icon>Nutri Score: 53
+            </h3>
+            <h3 class="h3-out-window">
+              <ion-icon name="flame-outline"></ion-icon>Calories: 570
+            </h3>
+            <h3 class="h3-out-window">
+              <ion-icon name="star-half-outline"></ion-icon>4.5 rating (137)
+            </h3>
+          </div>
+        </div>
+        <div class="meal-container" id="tab-4">
+          <div>
+            <img
+              class="img-out-window meal-attributes"
+              src="img/menu/meal_4.png"
+              alt=""
+            />
+          </div>
+
+          <div class="meal-info-container">
+            <h3 class="h3-out-window">
+              <ion-icon name="leaf-outline"></ion-icon>Nutri Score: 81
+            </h3>
+            <h3 class="h3-out-window">
+              <ion-icon name="flame-outline"></ion-icon>Calories: 430
+            </h3>
+            <h3 class="h3-out-window">
+              <ion-icon name="star-half-outline"></ion-icon>4.9 rating (537)
+            </h3>
+          </div>
+        </div>
+        <div class="meal-container" id="tab-5">
+          <div>
+            <img
+              class="img-out-window meal-attributes"
+              src="img/menu/meal_5.png"
+              alt=""
+            />
+          </div>
+
+          <div class="meal-info-container">
+            <h3 class="h3-out-window">
+              <ion-icon name="leaf-outline"></ion-icon>Nutri Score: 79
+            </h3>
+            <h3 class="h3-out-window">
+              <ion-icon name="flame-outline"></ion-icon>Calories: 333
+            </h3>
+            <h3 class="h3-out-window">
+              <ion-icon name="star-half-outline"></ion-icon>4.2 rating (53)
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h1 class="primary-heading">Testimonials</h1>
+
+        <div class="review-bg-container">
+          <div class="review-card-container">
+            <div class="review-card">
+              <figure>
+                <div><img class="quotes" src="img/quotes.png" alt="" /></div>
+                <div>
+                  <img
+                    class="profile-pic"
+                    src="img/customers/dave.jpg"
+                    alt="dave"
+                  />
+                </div>
+              </figure>
+              <blockquote>
+                From the first week we started receiving from Veggie Patrol, I
+                knew this was a perfect fit. They really understand how to care
+                for everyone in my family, our individual needs and preferences.
+                Every meal is tailored to both adults and kids.
+              </blockquote>
+              <p>Dave Bryson</p>
+            </div>
+
+            <div class="review-card">
+              <figure>
+                <div><img class="quotes" src="img/quotes.png" alt="" /></div>
+                <div>
+                  <img
+                    class="profile-pic"
+                    src="img/customers/ben.jpg"
+                    alt="Ben"
+                  />
+                </div>
+              </figure>
+              <blockquote>
+                I ordered meals for my son and daughter in law to help them out
+                during the COVID crisis. They enjoyed them very much and there
+                was enough food for an extra day. My son said the food was
+                healthy, cooked well and delicious. Well done!
+              </blockquote>
+              <p>Ben Hadley</p>
+            </div>
+            <div class="review-card">
+              <figure>
+                <div><img class="quotes" src="img/quotes.png" alt="" /></div>
+                <div>
+                  <img
+                    class="profile-pic"
+                    src="img/customers/hannah.jpg"
+                    alt="Hannah"
+                  />
+                </div>
+              </figure>
+              <blockquote>
+                "Veggie Patrol is a great healthy meal service for those who are
+                challenged to find either the time or energy to shop & cook. We
+                have found it indispensable to sustain long work shifts when
+                other healthy & fast restaurant options are in short supply."
+              </blockquote>
+              <p>Hannah Smith</p>
+            </div>
+            <div class="review-card">
+              <figure>
+                <div><img class="quotes" src="img/quotes.png" alt="" /></div>
+                <div>
+                  <img
+                    class="profile-pic"
+                    src="img/customers/steve.jpg"
+                    alt="steve"
+                  />
+                </div>
+              </figure>
+              <blockquote>
+                I’m a business owner who lives a very hectic life, but I’m
+                invested in my health and work out 6 times a week. This service
+                ensures I don’t miss meals and puts extremely healthy food into
+                my system.
+              </blockquote>
+              <p>Steve Miller</p>
+            </div>
+            <div class="review-card">
+              <figure>
+                <div><img class="quotes" src="img/quotes.png" alt="" /></div>
+                <div>
+                  <img
+                    class="profile-pic"
+                    src="img/customers/customer-3.jpg"
+                    alt="Karen"
+                  />
+                </div>
+              </figure>
+              <blockquote>
+                I got Veggie Patrol for the whole family, and it frees up so
+                much time! Plus, everything is organic and vegan and without
+                plastic.The AI algorithm is crazy good, it chooses the right
+                meals for me every time.
+              </blockquote>
+              <p>Karen Lockwood</p>
+            </div>
+          </div>
+          <div class="review-button-container">
+            <button class="review-btn">
+              <ion-icon name="remove-outline"></ion-icon>
+            </button>
+            <button class="review-btn">
+              <ion-icon name="remove-outline"></ion-icon>
+            </button>
+            <button class="review-btn">
+              <ion-icon name="remove-outline"></ion-icon>
+            </button>
+            <button class="review-btn">
+              <ion-icon name="remove-outline"></ion-icon>
+            </button>
+            <button class="review-btn">
+              <ion-icon name="remove-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <h1 class="primary-heading">Pricing</h1>
+
+        <div class="grid-container">
+          <div class="price-container" id="col-one">
+            <div>
+              <div class="plan-desc">
+                <p class="plan-name">basic</p>
+                <p class="plan-price">$399</p>
+                <p class="plan-duration">per month</p>
+              </div>
+              <button class="plan-buy" data-href="#home">
+                Buy Plan <span></span>
+              </button>
+            </div>
+          </div>
+          <div class="price-container premium-price" id="col-two">
+            <div>
+              <div class="plan-desc">
+                <p class="plan-name">premium</p>
+                <p class="plan-price">$599</p>
+                <p class="plan-duration">per month</p>
+              </div>
+              <button class="plan-buy" data-href="#home">
+                Buy Plan <span></span>
+              </button>
+            </div>
+          </div>
+          <div class="price-container" id="col-three">
+            <div>
+              <div class="plan-desc">
+                <p class="plan-name">standard</p>
+                <p class="plan-price">$499</p>
+                <p class="plan-duration">per month</p>
+              </div>
+              <button class="plan-buy" data-href="#home">
+                Buy Plan <span></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="row row-one">
+            <span class="pricing-features">Order 24/7</span>
+            <ion-icon name="close-outline"></ion-icon>
+            <ion-icon name="checkmark-outline" style="color: white"></ion-icon>
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </div>
+          <div class="row row-two">
+            <span class="pricing-features">free delivery</span>
+            <ion-icon name="checkmark-outline"></ion-icon>
+            <ion-icon name="checkmark-outline" style="color: white"></ion-icon>
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </div>
+          <div class="row row-three">
+            <span class="pricing-features">No. of meals per day</span>
+            <ion-icon name="checkmark-outline"></ion-icon>
+            <ion-icon name="checkmark-outline" style="color: white"></ion-icon>
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </div>
+          <div class="row row-four">
+            <span class="pricing-features">Recipe Customization</span>
+            <ion-icon name="close-outline"></ion-icon>
+            <ion-icon name="checkmark-outline" style="color: white"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+          <div class="row row-five">
+            <span class="pricing-features">Protien Customization</span>
+            <ion-icon name="close-outline"></ion-icon>
+            <ion-icon name="checkmark-outline" style="color: white"></ion-icon>
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </div>
+          <div class="row row-six">
+            <span class="pricing-features">Access to latest recipes</span>
+            <ion-icon name="close-outline"></ion-icon>
+            <ion-icon name="checkmark-outline" style="color: white"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta">
+        <div class="cta-grid">
+          <div>
+            <h2>Get your first meal for free!</h2>
+            <p>
+              Healthy, tasty and hassle-free meals are waiting for you. Start
+              eating well today. You can cancel or pause anytime. And the first
+              meal is on us!
+            </p>
+            <form action="noaction.php" name="ctaForm">
+              <div>
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Kamal Sharma"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="me@example.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="drop-down">Where did you hear about us?</label>
+                <select name="drop-down" id="drop-down" required>
+                  <option value="">Please Choose an Option:</option>
+                  <option value="">Friends and Family</option>
+                  <option value="">YouTube Video</option>
+                  <option value="">Facebook Ad</option>
+                  <option value="">Podcast</option>
+                  <option value="">Others</option>
+                </select>
+              </div>
+              <input type="submit" value="Sign Up Now" />
+            </form>
+          </div>
+          <div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="logo-col">
+          <img src="img/logo.png" alt="" />
+          <ion-icon name="logo-facebook" data-href="#home"></ion-icon>
+          <ion-icon name="logo-instagram" data-href="#home"></ion-icon>
+          <ion-icon name="logo-youtube" data-href="#home"></ion-icon>
+          <ion-icon name="logo-twitter" data-href="#home"></ion-icon>
+          <p>
+            Copyright &copy; 2022 by Veggie Patrol, Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p>Contact Us</p>
+          <p>
+            623 Harrison St., 2nd Floor, San Francisco, CA 94107 <br /><br />
+            435-201-6670 hello@veggiepatrol.com
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <p>Account</p>
+          <ul>
+            <li>Create account</li>
+            <li>Sign an</li>
+            <li>iOS app</li>
+            <li>Android app</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Company</p>
+          <ul>
+            <li>About Veggie Patrol</li>
+            <li>For Business</li>
+            <li>Cooking partners</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Resources</p>
+          <ul>
+            <li>Recipe directory</li>
+            <li>Help center</li>
+            <li>Privacy & terms</li>
+          </ul>
+        </div>
+      </div>
     </footer>
-  
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="jquery-3.6.0.js"></script>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
