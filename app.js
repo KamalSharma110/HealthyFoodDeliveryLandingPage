@@ -206,7 +206,7 @@ $(document).ready(function () {
     var txt, len = 0;
     var tick = function(){
         
-        txt = fullTxt.substring(0, len++ + 1);
+        txt = fullTxt.substring(0, ++len);
         
         $element.text(txt);
         

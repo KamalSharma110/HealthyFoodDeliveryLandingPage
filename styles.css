@@ -67,18 +67,14 @@ header {
 #navbar ul {
     display: flex;
     justify-content: end;
+    align-items:center;
     width: 55%;
     column-gap: 4vw;
     transition: all 1s;
 }
 
-.auto-height {
-    height: auto !important;
-}
-
 #navbar ul li {
     list-style: none;
-    padding: 10px 0;
     font-weight: 500;
 }
 
@@ -161,7 +157,6 @@ header {
 .primary-container {
     width: 40.46%;
     row-gap: 2vw;
-    justify-content: space-between;
     position: absolute;
     right: 0;
     top: 118px;
@@ -329,7 +324,6 @@ header {
     color: #71b85f;
     font-size: clamp(.7rem, 2.5vw, 1.4rem);
     width: max-content;
-    text-align: center;
 }
 
 .meal-attributes {

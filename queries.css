@@ -25,7 +25,6 @@
 
     #home-main-image-container {
         padding-top: 46px;
-        position: static;
         margin-inline: auto;
         width: max(300px, 55%);
     }
@@ -194,6 +193,10 @@
         align-items: center;
         height: 0;
         overflow: hidden;
+    }
+
+    #navbar ul li{
+        padding: 10px 0;
     }
 
     #navbar {
