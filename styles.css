@@ -504,10 +504,6 @@ header {
     transition: all 0.5s ease;
 }
 
-.review-button-container>*>* {
-    font-size: inherit;
-}
-
 .review-btn ion-icon {
     font-size: clamp(2.4rem, 3.5vw, 3rem);
 }
@@ -568,7 +564,7 @@ header {
 .row {
     color: #a7d87f;
     width: 100%;
-    border-bottom: 2px solid #cacdd12e;
+    border-bottom: 2px solid #cacdd14f;
 }
 
 .row-one {
@@ -679,7 +675,7 @@ header {
 }
 
 .plan-buy:hover span {
-    transform: translate(113px, 34px) rotateZ(45deg);
+    transform: translate(113px, 24px) rotateZ(45deg);
 }
 
 .plan-buy:hover {
@@ -722,8 +718,6 @@ header {
     color: #787575;
     text-transform: uppercase;
 }
-
-
 
 
 /*******CTA section****************/

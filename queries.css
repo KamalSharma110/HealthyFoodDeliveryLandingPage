@@ -77,32 +77,33 @@
     }
 
     .row {
+        grid-row: 1/-1;
         border-right: 2px solid #cacdd12e;
         text-align: -webkit-right;
     }
     
     .row-one{
-        grid-row: 1 / -1;
+        
         grid-column: 12 / span 1;
     }
     .row-two{
-        grid-row: 1 / -1;
+        
         grid-column: 13 / span 1;
     }
     .row-three{
-        grid-row: 1 / -1;
+        
         grid-column: 14 / span 1;
     }
     .row-four{
-        grid-row: 1 / -1;
+        
         grid-column: 15 / span 1;
     }
     .row-five{
-        grid-row: 1 / -1;
+        
         grid-column: 16 / span 1;
     }
     .row-six{
-        grid-row: 1 / -1;
+        
         grid-column: 17 / span 1;
     }
 

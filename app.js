@@ -4,23 +4,23 @@ $(document).ready(function () {
 
     /*********************Stat Counter**********************/
 
-    const $counter = $('.counter-container span:nth-child(1)');
-    const counter_text = $counter.text();
-    const value = counter_text.substring(0, counter_text.length - 2);
-    var initialValue = 0;
-    const increment = Math.ceil(value / 1000);
+    // const $counter = $('.counter-container span:nth-child(1)');
+    // const counter_text = $counter.text();
+    // const value = counter_text.substring(0, counter_text.length - 2);
+    // var initialValue = 0;
+    // const increment = Math.ceil(value / 1000);
 
-    $('.counter-container span:nth-child(3)').css('transform', 'scaleX(1)');
+    // $('.counter-container span:nth-child(3)').css('transform', 'scaleX(1)');
 
-    const clear = setInterval(() => {
-        initialValue += increment;
-        if (initialValue > value) {
-            $counter.text(`${value}k+`);
-            clearInterval(clear);
-            return;
-        }
-        $counter.text(`${initialValue}k+`);
-    }, 10);
+    // const clear = setInterval(() => {
+    //     initialValue += increment;
+    //     if (initialValue > value) {
+    //         $counter.text(`${value}k+`);
+    //         clearInterval(clear);
+    //         return;
+    //     }
+    //     $counter.text(`${initialValue}k+`);
+    // }, 10);
 
     /*********************Review Slider**********************/
     var $reviewButtons = $('.review-btn');
@@ -40,41 +40,38 @@ $(document).ready(function () {
         var gapBwReviews = ($window.width() - ( (1 + showMultipleRw) * $reviews.innerWidth())) / 2;
         var reviewContainerWidth = $reviews.innerWidth() * ($reviews.length + 2) + gapBwReviews * ($reviews.length + 1);
         
-
         $reviewContainer.css('width', reviewContainerWidth);
     
         slidingOffset = $reviews.innerWidth() + gapBwReviews;
 
-    
         $('.btn-active').click();
     }
+
     slidingReviews();
     
     var doit;
-    $window.on('resize' , function(){       //making the callback function run only when the current resizing 
-    clearTimeout(doit);                     //is done and not every time the resize event gets fired......
+    $window.on('resize' , function(){       //making the callback function run only after the current resizing task
+    clearTimeout(doit);                     //is terminated and not every time the resize event gets fired
     doit = setTimeout(()=>{
         slidingReviews();
         setTimeout(slidingReviews, 1000);
     }, 200);
     });
     
-    // $('#temp').on('click', slidingReviews);
-        
+    
     $reviewButtons.each(function (index) {
         $(this).on('click', function () {
             $reviewButtons.removeClass('btn-active');
             $(this).addClass('btn-active');
-            localStorage.setItem('lastActive', index);
     
-            $reviewContainer.css('left', `${-$reviews.innerWidth() / (1 + showMultipleRw) - index * slidingOffset}px`);
+            $reviewContainer.css('left', (-$reviews.innerWidth() / (1 + showMultipleRw)) - (index * slidingOffset) + 'px');
 
             $reviews.removeClass('active');
             $reviews.eq(index).addClass('active');
         });
     });
 
-    $reviewButtons.eq(localStorage.getItem('lastActive')).click();
+    $reviewButtons.eq(1).click();
 
     /*********************Sticky Navbar**********************/
     
@@ -121,24 +118,6 @@ $(document).ready(function () {
         var $activeListItem = $tabList.find('li.active');
         var $activeTab = $activeListItem.find('a');
         var $activePanel = $($activeTab.attr('href'));
-
-
-        // var $this = $(this);
-
-        // $this.on('click', function(e){
-        //     e.preventDefault();
-        //     var $target = $(e.target);
-        //     var id = e.target.hash;
-        //     console.log(e.target);
-        //     console.log('hello');
-
-        //     $activeListItem.removeClass('active');
-        //     $activePanel.removeClass('active');
-
-        //     $activeListItem = $target.parent().addClass('active');
-        //     $activePanel = $(id).addClass('active');
-        //     setTimeout(function(){ addTransition(id); }, 200);
-        // });
 
         var $anchors = $('.tab-list a');
 
