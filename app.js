@@ -154,8 +154,10 @@ $(document).ready(function () {
 
             headerHeight = $header.innerHeight();
             
-            if (!$header.hasClass('fixed-nav')) headerHeight += headerHeight;
-            if($window.width() <= 736 && $navbarList.css('height') !== '0px')  headerHeight -= navbarListHeight;    
+            if(!$header.hasClass('fixed-nav')) headerHeight += headerHeight;
+            if($window.width() <= 736 && $navbarList.css('height') !== '0px')  headerHeight -= navbarListHeight;  
+            //when the navigation panel is open on small devices, 'headerHeight' will be representing 
+            //a large value that'll include the navbarListHeight also  
              
             var targetElAttr = $this.attr('data-href') || $this.attr('href');
 
